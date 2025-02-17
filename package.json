@@ -30,7 +30,6 @@
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^18.3.1",
     "react-instantsearch": "^7.15.1",
-    "react-instantsearch-hooks-web": "^6.47.3",
     "react-router-dom": "^7.1.1",
     "react-speech-recognition": "^3.10.0",
     "regenerator-runtime": "^0.14.1"
