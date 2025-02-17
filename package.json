@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"vite\" \"node src/components/chat/Server.js\"",
-    "build": "vite build",
+    "build": "concurrently \"vite build\" \"node src/components/chat/Server.js\"",
     "lint": "eslint .",
     "preview": "vite preview"
   },
