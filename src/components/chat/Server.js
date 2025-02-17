@@ -1,10 +1,14 @@
 import express from 'express';
 import cors from 'cors';
+import path from 'path';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// Servir archivos estáticos desde el directorio 'dist'
+app.use(express.static(path.join(__dirname, '../../../dist')));
 
 // Inicializa la IA de Gemini (usando tu clave de API)
 const genAI = new GoogleGenerativeAI("AIzaSyAo64AaU-kicttP9CoshsGaa5UacnmDrxE");
