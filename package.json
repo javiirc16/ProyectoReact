@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "concurrently \"vite\" \"node src/components/chat/Server.js\"",
     "build": "vite build",
-    "start-server": "node src/components/chat/Server.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
