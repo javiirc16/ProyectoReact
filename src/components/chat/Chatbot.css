@@ -1,0 +1,124 @@
+/* Contenedor principal del chatbot */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Botón para abrir el chatbot (inspirado en Pokébola) */
+.chatbot-toggle {
+  background-color: #ff0000; /* Rojo como la Pokébola */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-toggle:hover {
+  background-color: #d50000; /* Rojo más oscuro en hover */
+}
+
+/* Estilo del popup del chatbot */
+.chatbot-popup {
+  background-color: #f8f8f8; /* Gris claro */
+  border: 2px solid #ffca28; /* Borde amarillo como las líneas del contorno de las Pokébolas */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Press Start 2P', cursive; /* Tipografía retro como los juegos de Pokémon */
+}
+
+/* Contenedor de los mensajes */
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* Estilo de los mensajes */
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 80%;
+}
+
+.message.user {
+  background-color: #4caf50; /* Verde, tipo planta */
+  color: white;
+  text-align: right;
+  margin-left: auto;
+  border-top-left-radius: 0;
+}
+
+.message.bot {
+  background-color: #2196f3; /* Azul, tipo agua */
+  color: white;
+  text-align: left;
+  margin-right: auto;
+  border-top-right-radius: 0;
+}
+
+/* Estilo de la barra de entrada */
+.chatbot-input {
+  display: flex;
+  border-top: 2px solid #ffca28; /* Amarillo como Pokébola */
+  background-color: #eeeeee;
+}
+
+.chatbot-input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-radius: 15px 0 0 15px;
+  font-size: 16px;
+  font-family: 'Press Start 2P', cursive;
+  outline: none;
+}
+
+.chatbot-input input:focus {
+  border: 2px solid #ff0000; /* Resaltar borde en rojo al enfocar */
+}
+
+.chatbot-input button {
+  background-color: #ffca28; /* Amarillo como Pokébola */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 0 15px 15px 0;
+  font-size: 16px;
+  font-family: 'Press Start 2P', cursive;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-input button:hover {
+  background-color: #ff9800; /* Amarillo más oscuro */
+}
+
+/* Estilos adicionales para mejorar la experiencia */
+.chatbot-popup {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,85 @@
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ais-SearchBox {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ais-SearchBox input {
+  height: 45px; 
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  padding: 0 20px;
+  margin-right: 10px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.ais-SearchBox input:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega un efecto al enfocarse */
+}
+
+.ais-SearchBox-submit{
+  border: none;
+  border-radius: 25px;
+  height: 30px;
+  width: 30px;
+}
+
+.ais-SearchBox-reset{
+display: none;
+}
+
+.ais-SearchBox-submitIcon {
+  width: 13px;
+  height: auto;
+  display:inline;
+}
+
+.search-popup {
+  position: absolute;
+  top: 85px;
+  width: 100%;
+  max-width: 700px;
+  background: var(  --card-background-color, #ddd  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: visible;
+}
+
+.ais-Hits {
+  width: 100%;
+}
+
+.hit-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Reduce un poco el espacio entre los elementos */
+  padding: 0.5rem;
+  box-shadow: none;
+}
+
+.imagen {
+  width: 50px;
+  height: auto;
+}
+
+.primary-text {
+  font-weight: bold;
+  color: var(  --shop-title-color, #000000  );
+}
+
+.secondary-text,
+.tertiary-text {
+  color: var(--price-color, gray);
+}

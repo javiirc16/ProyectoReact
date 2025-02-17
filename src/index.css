@@ -1,0 +1,72 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87); /* Ensure text is visible in light mode */
+  background-color: #ffffff; /* Ensure background is light in light mode */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --background-color-dark: #202020;
+  --text-color-dark: #ffffff;
+
+  --navbar-background-color: #aeb1b4;
+  --navbar-text-color: #000000;
+  --navbar-link-color: #ffffff;
+  --navbar-link-hover-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+  --navbar-background-color: #333333;
+  --navbar-text-color: #ffffff;
+  --navbar-link-color: #ffffff;
+  --navbar-link-hover-color: #ffffff;
+  --pokemon-container-background-color: #333333;
+  --pokemon-container-text-color: #ffffff;
+  --pokemon-title-color: #bb86fc;
+  --pokemon-input-border-color: #bb86fc;
+  --pokemon-button-background-color: #bb86fc;
+  --pokemon-button-hover-background-color: #bb86fc;
+  --pokemon-card-border-color: #bb86fc;
+  --pokemon-image-box-shadow: rgba(255, 255, 255, 0.1);
+  --pokemon-loading-color: #bb86fc;
+  --pokemon-error-color: #ff6b6b;
+  --loginform-background-color: #333333;
+  --task-background-color: #585757;
+  --card-background-color: #46484b;
+  --shop-title-color: #ffffff;
+  --price-color: #d9d3e0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #eff253;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}

@@ -1,0 +1,68 @@
+.contenedor{
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px var(--pokemon-image-box-shadow, rgba(0, 0, 0, 0.1));
+    border: 2px solid var(--pokemon-card-border-color, #3d5a80);    
+    background-color: var(--loginform-background-color, #eaecee);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.title{
+    width: 210px;
+    font-size: 1.1rem;
+    margin: 5px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--task-background-color, #ffffff);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.task{
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.taskName{
+    font-size: 1.1rem;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.addTask{
+    padding: 10px;
+    width: 140px;
+    font-size: 1.1rem;
+    margin: 10px;
+    background-color: var(--pokemon-button-background-color, #3d5a80);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.addTask:hover {
+    background-color: var(--pokemon-button-hover-background-color, #98c4d6);
+}
+
+.deletebtn{
+    padding: 10px;
+    width: 120px;
+    margin: 10px;
+    background-color: hsl(0, 72%, 47%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.deletebtn:hover {
+    background-color: hsl(0, 72%, 57%);
+}
